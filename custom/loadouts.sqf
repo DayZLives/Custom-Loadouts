@@ -23,7 +23,7 @@ if(isNil "AdminList" then {
 //Admin Loadout
 if (_UID in AdminList) then {
 	DefaultMagazines = ["ItemBandage","ItemBandage","ItemBandage","ItemBandage","17Rnd_9x19_glock17","17Rnd_9x19_glock17","30Rnd_762x39_SA58","30Rnd_762x39_SA58","ItemMorphine","ItemPainkiller","ItemBloodbag","ItemSodaRabbit","FoodSteakCooked"];
-	DefaultWeapons = ["glock17_EP1","Sa58V_RCO_EP1","NVGoggles","ItemGPS","ItemKnife","ItemToolbox","ItemCrowbar","ItemHatchet"];
+	DefaultWeapons = ["glock17_EP1","Sa58V_RCO_EP1","NVGoggles","ItemGPS","ItemKnife","ItemToolbox","ItemCrowbar","ItemHatchet_DZE"];
 	DefaultBackpack = "DZ_LargeGunBag_EP1";
 	DefaultBackpackWeapon = "";
 }else{	
@@ -37,20 +37,20 @@ if (_UID in AdminList) then {
 		//Pro-Donor Loadout
 		if(_UID in _ProDonor) then { 
 			DefaultMagazines = ["ItemBandage","ItemBandage","ItemBandage","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","30Rnd_556x45_G36","30Rnd_556x45_G36","ItemMorphine","ItemPainkiller","ItemBloodbag","ItemSodaRabbit","ItemSodaRabbit","FoodSteakCooked"];
-			DefaultWeapons = ["M9SD","G36K_camo","NVGoggles","ItemGPS","ItemKnife","ItemMatchbox","ItemHatchet","ItemToolbox"];
+			DefaultWeapons = ["M9SD","G36K_camo","NVGoggles","ItemGPS","ItemKnife","ItemMatchbox","ItemHatchet_DZE","ItemToolbox"];
 			DefaultBackpack = "DZ_GunBag_EP1";
 			DefaultBackpackWeapon = "";
 		}else{			
 			//Donor Loadout
 			if(_UID in _Donor) then {
 				DefaultMagazines = ["ItemBandage","ItemBandage","ItemBandage","ItemBandage","ItemMorphine","ItemPainkiller","17Rnd_9x19_glock17","17Rnd_9x19_glock17","ItemGoldBar"];
-				DefaultWeapons = ["glock17_EP1","ItemMap","ItemHatchet","ItemToolbox"];
+				DefaultWeapons = ["glock17_EP1","ItemMap","ItemHatchet_DZE","ItemToolbox"];
 				DefaultBackpack = "DZ_ALICE_Pack_EP1";
 				DefaultBackpackWeapon = "";
 			}else{
 				//Default Loadout for normal players
 				DefaultMagazines = ["ItemBandage","ItemBandage","ItemMorphine","ItemPainkiller","ItemSodaRabbit"];
-				DefaultWeapons = ["ItemMap","ItemHatchet"];
+				DefaultWeapons = ["ItemMap","ItemHatchet_DZE"];
 				DefaultBackpack = "DZ_Patrol_Pack_EP1";
 				DefaultBackpackWeapon = "";
 			};
