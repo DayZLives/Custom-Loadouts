@@ -9,14 +9,8 @@ Custom-Loadouts
 1. Navigate to your ***MPMissions\\[mission]*** folder.
 1. Copy the ***custom*** folder to this mission
 1. Open the ***init.sqf***
-
-	Find this code in the !isDedicated if block:
-
-	~~~~java
-	dayz_maxLocalZombies
-	~~~~
 	
-	And past the following code ***BELOW*** it:
+	And past the following code at the ***bottom*** it:
 	
 	~~~~java
 	// Nox's Custom Loadout

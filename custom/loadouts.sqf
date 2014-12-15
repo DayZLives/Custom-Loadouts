@@ -10,11 +10,10 @@
 */
 
 private ["_Donor","_ProDonor","_player","_UID"];
-waitUntil {!isNil "dayz_animalCheck"};
 _player = player;
 _UID = getPlayerUID _player;
 
-if(isNil "AdminList" then {
+if(isNil "AdminList") then {
 	AdminList = [11111111111,222222222222]; // Admins (ONLY if you don't have my admin tool installed)
 	ModList = [11111111111,222222222222];}; // Mods (ONLY if you don't have my admin tool installed)
 	_Donor = [11111111111,222222222222]; // Donors
