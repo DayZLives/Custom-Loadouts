@@ -9,15 +9,15 @@
 		these terms.
 */
 
-private ["_Donor","_ProDonor","_player","_UID"];
+private ["_player","_UID"];
 _player = player;
 _UID = getPlayerUID _player;
 
 if(isNil "AdminList") then {
 	AdminList = [11111111111,222222222222]; // Admins (ONLY if you don't have my admin tool installed)
 	ModList = [11111111111,222222222222];}; // Mods (ONLY if you don't have my admin tool installed)
-	_Donor = [11111111111,222222222222]; // Donors
-	_ProDonor = [11111111111,222222222222]; // ProDonors
+	Donor = [11111111111,222222222222]; // Donors
+	ProDonor = [11111111111,222222222222]; // ProDonors
 	
 //Admin Loadout
 if (_UID in AdminList) then {
@@ -34,14 +34,14 @@ if (_UID in AdminList) then {
 		DefaultBackpackWeapon = "";
 	}else{		
 		//Pro-Donor Loadout
-		if(_UID in _ProDonor) then { 
+		if(_UID in ProDonor) then { 
 			DefaultMagazines = ["ItemBandage","ItemBandage","ItemBandage","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","30Rnd_556x45_G36","30Rnd_556x45_G36","ItemMorphine","ItemPainkiller","ItemBloodbag","ItemSodaRabbit","ItemSodaRabbit","FoodSteakCooked"];
 			DefaultWeapons = ["M9SD","G36K_camo","NVGoggles","ItemGPS","ItemKnife","ItemMatchbox","ItemHatchet_DZE","ItemToolbox"];
 			DefaultBackpack = "DZ_GunBag_EP1";
 			DefaultBackpackWeapon = "";
 		}else{			
 			//Donor Loadout
-			if(_UID in _Donor) then {
+			if(_UID in Donor) then {
 				DefaultMagazines = ["ItemBandage","ItemBandage","ItemBandage","ItemBandage","ItemMorphine","ItemPainkiller","17Rnd_9x19_glock17","17Rnd_9x19_glock17","ItemGoldBar"];
 				DefaultWeapons = ["glock17_EP1","ItemMap","ItemHatchet_DZE","ItemToolbox"];
 				DefaultBackpack = "DZ_ALICE_Pack_EP1";
