@@ -36,13 +36,13 @@ if (_UID in AdminList) then {
 		//Pro-Donor Loadout
 		if(_UID in ProDonorList) then {
 			DefaultMagazines = ["ItemBandage","ItemBandage","ItemBandage","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","30Rnd_556x45_G36","30Rnd_556x45_G36","ItemMorphine","ItemPainkiller","ItemBloodbag","ItemSodaRabbit","ItemSodaRabbit","FoodSteakCooked"];
-			DefaultWeapons = ["M9SD","G36K_camo","NVGoggles","ItemGPS","ItemKnife","ItemMatchbox","ItemHatchet_DZE","ItemToolbox"];
-			DefaultBackpack = "DZ_GunBag_EP1";
+			DefaultWeapons = ["M9SD","G36K_camo","ItemGPS","ItemKnife","ItemToolbox"];
+			DefaultBackpack = "DZ_Backpack_EP1";
 			DefaultBackpackWeapon = "";
 		}else{
 			//Donor Loadout
 			if(_UID in DonorList) then {
-				DefaultMagazines = ["ItemBandage","ItemBandage","ItemBandage","ItemBandage","ItemMorphine","ItemPainkiller","17Rnd_9x19_glock17","17Rnd_9x19_glock17"];
+				DefaultMagazines = ["ItemBandage","ItemBandage","ItemBandage","ItemBandage","ItemMorphine","ItemPainkiller","ItemSodaRabbit","17Rnd_9x19_glock17","17Rnd_9x19_glock17"];
 				DefaultWeapons = ["glock17_EP1","ItemMap","ItemHatchet_DZE","ItemToolbox"];
 				DefaultBackpack = "DZ_ALICE_Pack_EP1";
 				DefaultBackpackWeapon = "";
