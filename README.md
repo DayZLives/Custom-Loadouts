@@ -10,15 +10,11 @@ Custom-Loadouts
 1. Copy the ***custom*** folder to this mission
 1. Open the ***init.sqf***
 	
-	And past the following code:
+	And past the following code at the ***bottom*** it:
 	
 	~~~~java
-	call compile preprocessFileLineNumbers "custom\loadouts.sqf";	// Nox's Custom Loadout
-	~~~~
-	
-	***ABOVE***
-	~~~~java
-	progressLoadingScreen 1.0;
+	// Nox's Custom Loadout
+	[] ExecVM "custom\loadouts.sqf";
 	~~~~
 
 1. Save the file

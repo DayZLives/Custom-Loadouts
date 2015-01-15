@@ -14,10 +14,10 @@ _player = player;
 _UID = getPlayerUID _player;
 
 if(isNil "AdminList") then {
-	AdminList = [11111111111,222222222222]; // Admins (ONLY if you don't have my admin tool installed)
-	ModList = [11111111111,222222222222];}; // Mods (ONLY if you don't have my admin tool installed)
-	DonorList = [11111111111,222222222222]; // Donors
-	ProDonorList = [11111111111,222222222222]; // ProDonors
+	AdminList = ["11111111111","222222222222"]; // Admins (ONLY if you don't have my admin tool installed)
+	ModList = ["11111111111","222222222222"];}; // Mods (ONLY if you don't have my admin tool installed)
+	DonorList = ["11111111111","222222222222"]; // Donors
+	ProDonorList = ["11111111111","222222222222"]; // ProDonors
 	
 //Admin Loadout
 if (_UID in AdminList) then {
